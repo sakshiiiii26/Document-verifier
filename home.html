@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">Document Verifier</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#tutorial">Tutorial</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Contact-us">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="background">
+    </div>
+      <div class="container">
+        <div class="Document-verification my-sm-10 " id="triggerDiv" style="cursor: pointer;">
+          <h1>Document Verification</h1>
+        </div>
+        <div class="Document-Generator">
+          <h1>Document Generator</h1>
+        </div>
+        <div class="Document-update">
+          <h1>Document update</h1>
+        </div>
+      </div>
+      <div class="Tutorial my-sm-10" id="tutorial">
+        <h1>Tutorial</h1>
+      </div>
+      <div class="Contact-us my-sm-10" id="Contact-us">
+        <h1>Contact-us</h1>
+        <p>Email id :indiangov@gmail.com</p>
+        <p>contact : 3254412154</p>
+      </div>
+
+      <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Document Verification</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="aditional-content" id="document-for-verification"><a href="">document-for-verification</a></div>
+                    <div class="aditional-content" id="verified-document"><a href="">verified-document</a></div>
+                    <div class="aditional-content" id="pending-document"><a href="">pending-document</a></div>
+                    <div class="aditional-content" id="rejected-document"><a href="">rejected-document</a></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to handle the click event
+        document.getElementById('triggerDiv').addEventListener('click', function() {
+            $('#myModal').modal('show');
+        });
+    </script>
+  </body>
+</html>
