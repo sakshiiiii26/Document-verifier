@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100vw;
+    overflow-x: hidden;
+}
+.background{
+    height: 100vh;
+    background-color: rgb(18, 187, 150);
+    background-image: url(Background-Verification.png);
+    background-size: cover;
+}
+.navbar{
+    background-color: chocolate;
+}
+.container{
+    height: 100vh;
+    position: absolute;
+    top:3%;
+    left: 30%;
+    align-items: center;
+}
+.Document-verification{
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 15%;
+    border-radius: 15px;
+}
+.Document-Generator{
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: aliceblue;
+    position: relative;
+    left: 30%;
+    border-radius: 15px;
+}
+.Document-update{
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.Tutorial{
+    height: 400px;
+    width:1465px;
+    border: 2px solid black;
+    text-align: center;
+    background-color:  rgb(197, 99, 8);
+}
+.Contact-us{
+    height: 120px;
+    width: 1465px;
+    border: 2px solid black;
+    color: rgb(247, 243, 243);
+    background-color: black;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.additional-content {
+    background-color: #7e7b7b;
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
